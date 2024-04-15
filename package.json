@@ -5,7 +5,8 @@
   "scripts": {
     "lint": "prettier --write .",
     "main": "bun run src/main.ts",
-    "test": "bun test"
+    "test": "bun test",
+    "build": "bun build src/main.ts --minify --sourcemap --outdir dist"
   },
   "devDependencies": {
     "@types/bun": "latest",
