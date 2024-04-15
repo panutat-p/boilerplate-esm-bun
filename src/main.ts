@@ -1,7 +1,15 @@
 import { sleep } from './sleep.ts'
 
-sleep(2000).then(() => {
-  console.log('🟢 done')
+console.log('✅ start')
+console.log('env:', Bun.env.ENV)
+console.log('version:', Bun.env.VERSION)
+
+sleep(1500).then(() => {
+  console.log('💤 sleep')
+})
+
+Bun.sleep(1000).then(() => {
+    console.log('💤 Bun.sleep')
 })
 
 const fruits: Record<string, number> = {
@@ -28,3 +36,5 @@ if (Object.hasOwn(fruits, 'carrot')) {
 if (!fruits.dragon) {
   console.log('❌ dragon does not exist')
 }
+
+console.log('✅ end')

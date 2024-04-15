@@ -7,5 +7,6 @@ bun init
 ```
 
 ```sh
+bun add -d bun-types
 bun add -d prettier
 ```
