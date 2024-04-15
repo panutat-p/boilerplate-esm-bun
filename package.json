@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "lint": "prettier --write .",
-    "main": "bun run src/main.ts"
+    "main": "bun run src/main.ts",
+    "test": "bun test"
   },
   "devDependencies": {
     "@types/bun": "latest",
