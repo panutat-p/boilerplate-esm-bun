@@ -1,9 +1,14 @@
 {
   "name": "boilerplate-esm-bun",
-  "module": "src/index.ts",
+  "module": "src/main.ts",
   "type": "module",
+  "scripts": {
+    "lint": "prettier --write .",
+    "main": "bun run src/main.ts"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "prettier": "^3.2.5"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
