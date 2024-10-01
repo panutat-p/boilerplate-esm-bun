@@ -1,4 +1,4 @@
-import { sleep } from './sleep.ts'
+import { sleep } from './time/sleep.ts'
 
 console.log('✅ start')
 console.log('env:', Bun.env.ENV)
@@ -9,7 +9,7 @@ sleep(1500).then(() => {
 })
 
 Bun.sleep(1000).then(() => {
-    console.log('💤 Bun.sleep')
+  console.log('💤 Bun.sleep')
 })
 
 const fruits: Record<string, number> = {
